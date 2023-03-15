@@ -3,25 +3,23 @@
 // @namespace   My Scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.0
+// @version     1.0.1
 // @author      VinhTT
 // @description 2023
 // ==/UserScript==
 (() => {
   const MY_EMOJI_LIST = [
+    '[preview id=1160628178 ht=150]',
     '[preview id=1160627105 ht=135]',
     '[preview id=1160627392 ht=111]',
     '[preview id=1160627610 ht=144]',
     '[preview id=1160627812 ht=133]',
     '[preview id=1160628005 ht=108]',
-    '[preview id=1160628178 ht=150]',
     '[preview id=1160628325 ht=150]',
     '[preview id=1160629433 ht=109]',
     '[preview id=1160629434 ht=120]',
     '[preview id=1160631924 ht=98]',
     '[preview id=1160629497 ht=139]',
-    '[preview id=1160635454 ht=70]',
-    '[preview id=1160635453 ht=76]',
     '[preview id=1160572428 ht=140]',
     '[preview id=1160575045 ht=150]',
     '[preview id=1160599877 ht=150]',
