@@ -3,7 +3,7 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      VinhTT
 // @description 2023-03
 // ==/UserScript==
@@ -27,18 +27,9 @@
     '[preview id=1160635453 ht=76]',
     '[preview id=1160635454 ht=70]',
     '[preview id=1161042549 ht=150]',
-    '[preview id=1161051372 ht=200]',
-    '[preview id=1161051371 ht=200]',
-    '[preview id=1161051370 ht=200]',
-    '[preview id=1161051369 ht=200]',
-    '[preview id=1161051368 ht=200]',
-    '[preview id=1161051367 ht=200]',
-    '[preview id=1161051366 ht=200]',
-    '[preview id=1161051365 ht=200]',
-    '[preview id=1161051364 ht=200]',
-    '[preview id=1161055722 ht=120]',
     '[preview id=1161049907 ht=50]',
     '[preview id=1161050283 ht=136]',
+    '[preview id=1161053627 ht=100]',
   ];
 
   const MY_EMOJI = function (retry = 5) {
