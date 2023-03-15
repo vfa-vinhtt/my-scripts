@@ -3,7 +3,7 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.4
+// @version     1.5
 // @author      VinhTT
 // @description 2023-03
 // ==/UserScript==
@@ -30,6 +30,7 @@
     '[preview id=1161049907 ht=50]',
     '[preview id=1161050283 ht=136]',
     '[preview id=1161053627 ht=100]',
+    '[preview id=1161443888 ht=130]',
   ];
 
   const MY_EMOJI = function (retry = 5) {
