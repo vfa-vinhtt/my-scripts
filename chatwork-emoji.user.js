@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name        My Chatwork Emoji
-// @namespace   My Scripts
+// @name        Chatwork Emoji
+// @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.0.1
+// @version     1.1
 // @author      VinhTT
-// @description 2023
+// @description 2023-03
 // ==/UserScript==
 (() => {
   const MY_EMOJI_LIST = [
