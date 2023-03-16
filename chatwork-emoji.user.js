@@ -3,7 +3,7 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.9
+// @version     1.10
 // @author      VinhTT
 // @description 2023-03
 // @icon        https://raw.githubusercontent.com/vfa-vinhtt/my-scripts/main/assets/chatwork-emoji.png
@@ -70,6 +70,15 @@
     '[preview id=1162383253 ht=70]',
     '[preview id=1162397407 ht=70]',
     '[preview id=1162419716 ht=70]',
+    '[preview id=1162457846 ht=70]',
+    '[preview id=1162457845 ht=70]',
+    '[preview id=1162457844 ht=70]',
+    '[preview id=1162457843 ht=70]',
+    '[preview id=1162457842 ht=70]',
+    '[preview id=1162457841 ht=70]',
+    '[preview id=1162457840 ht=70]',
+    '[preview id=1162457839 ht=70]',
+    '[preview id=1162457838 ht=70]',
   ];
   const MY_EMOJI_OTHER = [
     '[preview id=1161049907 ht=50]',
