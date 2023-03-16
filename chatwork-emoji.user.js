@@ -3,12 +3,14 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.6
+// @version     1.8
 // @author      VinhTT
 // @description 2023-03
+// @icon        https://raw.githubusercontent.com/vfa-vinhtt/my-scripts/main/assets/chatwork-emoji.png
 // ==/UserScript==
+
 (() => {
-  const MY_EMOJI_LIST = [
+  const MY_EMOJI_RABBIT = [
     '[preview id=1160628178 ht=70]',
     '[preview id=1160627105 ht=70]',
     '[preview id=1160627392 ht=70]',
@@ -21,9 +23,14 @@
     '[preview id=1160631924 ht=70]',
     '[preview id=1160635453 ht=70]',
     '[preview id=1160635454 ht=70]',
+  ];
+  const MY_EMOJI_BEAR = [
     '[preview id=1161042549 ht=70]',
     '[preview id=1161050283 ht=70]',
     '[preview id=1161053627 ht=70]',
+    '[preview id=1162216126 ht=70]',
+  ];
+  const MY_EMOJI_SUMO = [
     '[preview id=1160629497 ht=70]',
     '[preview id=1160572428 ht=70]',
     '[preview id=1160575045 ht=70]',
@@ -44,14 +51,33 @@
     '[preview id=1161544555 ht=70]',
     '[preview id=1161544554 ht=70]',
     '[preview id=1161544553 ht=70]',
+    '[preview id=1162216492 ht=70]',
+  ];
+  const MY_EMOJI_ONION = [
     '[preview id=1161443888 ht=70]',
     '[preview id=1161542199 ht=70]',
     '[preview id=1161542198 ht=70]',
     '[preview id=1161542197 ht=70]',
     '[preview id=1161542196 ht=70]',
+    '[preview id=1162198310 ht=70]',
+    '[preview id=1162206850 ht=70]',
+    '[preview id=1162215140 ht=70]',
+    '[preview id=1162229901 ht=70]',
+    '[preview id=1162232130 ht=70]',
+    '[preview id=1162348407 ht=70]',
+    '[preview id=1162362026 ht=70]',
+  ];
+  const MY_EMOJI_OTHER = [
     '[preview id=1161049907 ht=50]',
   ];
 
+  const MY_EMOJI_LIST = [
+    ...MY_EMOJI_RABBIT,
+    ...MY_EMOJI_SUMO,
+    ...MY_EMOJI_ONION,
+    ...MY_EMOJI_BEAR,
+    ...MY_EMOJI_OTHER
+  ];
   const MY_EMOJI = function (retry = 5) {
     const elmEmoticonGallery = document.querySelector('#_emoticonGallery');
     if (elmEmoticonGallery) {
