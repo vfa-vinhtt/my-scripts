@@ -3,14 +3,13 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.11
+// @version     1.12
 // @author      VinhTT
 // @description 2023-03
 // @icon        https://raw.githubusercontent.com/vfa-vinhtt/my-scripts/main/assets/chatwork-emoji.png
 // ==/UserScript==
 
 (() => {
-
   const MY_EMOJI_RABBIT = [
     1160628178, 1160627105, 1160627392, 1160627610, 1160627812, 1160628005, 1160628325, 1160629433, 1160629434,
     1160631924, 1160635453, 1160635454, 1162396515,
@@ -30,9 +29,17 @@
     1162457843, 1162457842, 1162457841, 1162457840, 1162457839, 1162457838,
   ];
 
+  
+
+  const MY_EMOJI_DRAGON = [
+    1163368778, 1163368777, 1163368776, 1163368775, 1163368773, 1163368772, 1163368771, 1163368769, 1163368768,
+    1163368767, 1163368766, 1163368765, 1163368764, 1163368763, 1163368762, 1163368761, 1163368760, 1163368759,
+    1163368758, 1162457846,
+  ];
+
   const MY_EMOJI_OTHER = [1161049907];
 
-  const MY_EMOJI_LIST = [...MY_EMOJI_RABBIT, ...MY_EMOJI_SUMO, ...MY_EMOJI_ONION, ...MY_EMOJI_BEAR, ...MY_EMOJI_OTHER];
+  const MY_EMOJI_LIST = [...MY_EMOJI_RABBIT, ...MY_EMOJI_SUMO, ...MY_EMOJI_ONION, ...MY_EMOJI_BEAR, ...MY_EMOJI_DRAGON, ...MY_EMOJI_OTHER];
 
   const MY_EMOJI = function (retry = 5) {
     const elmEmoticonGallery = document.querySelector('#_emoticonGallery');
@@ -47,7 +54,6 @@
       } catch (error) {
         console.log(error);
       }
-      
     } else if (retry > 0) {
       setTimeout(() => MY_EMOJI(retry - 1), 1000);
     }
