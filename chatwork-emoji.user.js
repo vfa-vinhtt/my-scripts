@@ -3,7 +3,7 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.13
+// @version     1.14
 // @author      VinhTT
 // @description 2023-03
 // @icon        https://raw.githubusercontent.com/vfa-vinhtt/my-scripts/main/assets/chatwork-emoji.png
@@ -18,7 +18,7 @@
   const MY_EMOJI_BEAR = [1161042549, 1161050283, 1161053627, 1162216126];
 
   const MY_EMOJI_SUMO = [
-    1160629497, 1160572428, 1160575045, 1160599877, 1160658338, 1161544568, 1161544566, 1161544565, 1161544564,
+    1160629497, 1161544568, 1161544566, 1161544565, 1161544564,
     1161544563, 1161544562, 1161544561, 1161544560, 1161544559, 1161544558, 1161544557, 1161544556, 1161544555,
     1161544554, 1161544553, 1162216492,
   ];
