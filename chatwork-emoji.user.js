@@ -3,7 +3,7 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.18
+// @version     1.19
 // @author      VinhTT
 // @description 2023-03
 // @icon        https://raw.githubusercontent.com/vfa-vinhtt/my-scripts/main/assets/chatwork-emoji.png
@@ -13,7 +13,7 @@
 (() => {
   const ICON_RABBIT = [
     1160628178, 1160627105, 1160627392, 1160627610, 1160627812, 1160628005, 1160628325, 1160629433, 1160629434,
-    1160631924, 1160635453, 1160635454, 1162396515, 1162173851,
+    1160631924, 1160635453, 1160635454, 1162396515, 1162173851, 1163352074,
   ];
 
   const ICON_BEAR = [1161042549, 1161050283, 1161053627, 1162216126];
@@ -36,16 +36,9 @@
     1163368758,
   ];
 
-  const ICON_OTHER = [1161049907];
+  const ICON_OTHER = [1161049907, 1164633470, 1164635029];
 
-  const MY_EMOJI_LIST = [
-    ...ICON_RABBIT,
-    ...ICON_SUMO,
-    ...ICON_ONION,
-    ...ICON_DRAGON,
-    ...ICON_BEAR,
-    ...ICON_OTHER,
-  ];
+  const MY_EMOJI_LIST = [...ICON_RABBIT, ...ICON_SUMO, ...ICON_ONION, ...ICON_DRAGON, ...ICON_BEAR, ...ICON_OTHER];
 
   const FIND_AND_APPEND_ICON = (selector) => {
     const disconnect = VM.observe(document.body, () => {
@@ -58,6 +51,8 @@
             return `<li class="emoticonTooltip__emoticonContainer"><img src="${src}" class="emoticonTooltip__emoticon" title="${id}" alt="${preview}"></li>`;
           }).join('');
           targetNode.insertAdjacentHTML('beforeend', emojHtml);
+          // update max-height + show scroll
+          targetNode.setAttribute('style', `width:270px;max-height:400px;overflow-x:auto;padding:0;`);
         } catch (error) {
           console.log(error);
         }
