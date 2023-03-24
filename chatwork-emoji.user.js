@@ -3,7 +3,7 @@
 // @namespace   vinhtt_scripts
 // @match       https://www.chatwork.com/*
 // @grant       none
-// @version     1.19
+// @version     1.20
 // @author      VinhTT
 // @description 2023-03
 // @icon        https://raw.githubusercontent.com/vfa-vinhtt/my-scripts/main/assets/chatwork-emoji.png
@@ -36,9 +36,22 @@
     1163368758,
   ];
 
-  const ICON_OTHER = [1161049907, 1164633470, 1164635029];
+  const ICON_FROG = [
+    1166906517, 1166906516, 1166906515, 1166906514, 1166906513, 1166906512, 1166906511, 1166906510, 1166906509,
+    1166906508, 1166906507, 1166906506, 1164633470, 1164635029,
+  ];
 
-  const MY_EMOJI_LIST = [...ICON_RABBIT, ...ICON_SUMO, ...ICON_ONION, ...ICON_DRAGON, ...ICON_BEAR, ...ICON_OTHER];
+  const ICON_OTHER = [1161049907];
+
+  const MY_EMOJI_LIST = [
+    ...ICON_RABBIT,
+    ...ICON_SUMO,
+    ...ICON_ONION,
+    ...ICON_DRAGON,
+    ...ICON_BEAR,
+    ...ICON_FROG,
+    ...ICON_OTHER,
+  ];
 
   const FIND_AND_APPEND_ICON = (selector) => {
     const disconnect = VM.observe(document.body, () => {
